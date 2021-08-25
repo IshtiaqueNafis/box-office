@@ -1,9 +1,10 @@
 import React from 'react';
+import MainPageLayout from "../MainPageLayout";
 
 const MyComponent = () => (
-        <div>
+        <MainPageLayout>
             this is the started page 
-        </div>
+        </MainPageLayout>
     );
 
 export default MyComponent;
