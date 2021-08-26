@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {
+    useState} from 'react';
 import MainPageLayout from "../MainPageLayout";
 import {apiGET} from "../../misc/config";
 import ShowGrid from "../show/ShowGrid";
@@ -11,6 +12,7 @@ const Home = () => {
     const isShowSearch = searchOption === 'shows'
 
 
+
     const onInputChange = ev => {
         setInput(ev.target.value);
 
@@ -20,7 +22,6 @@ const Home = () => {
         apiGET(`/search/${searchOption}?q=${input}`).then(result => {
             setResults(result)
         })
-
 
 
     }
